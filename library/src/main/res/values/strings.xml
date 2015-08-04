@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_url_error">The download url is invalid.</string>
+    <string name="download_task_repeat">The download url is already in downloading list.</string>
+    <string name="download_sdcard_error">The sdcard is not ready.</string>
+    <string name="download_task_add_ok">Download task is added.</string>
+    <string name="download_task_finished">Download task is finished.</string>
+</resources>

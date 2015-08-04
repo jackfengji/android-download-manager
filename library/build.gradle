@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    compile 'com.android.support:support-annotations:22.2.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    publishNonDefault true
+
+    defaultConfig {
+        minSdkVersion 8
+    }
+}
