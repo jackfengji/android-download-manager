@@ -1,15 +1,11 @@
+### Android Download Manager
+
+This is a download manager similar to android's internal download manager. But this provides more controls to you.
+It supports range download and you can then pause/resume the downloads. You can also control how many tasks could be downloading at same time.
+
 ### Configurations
 
-In Config.java, you can change the following settings.
-
-```java
-
-public static final int MAX_BLOCK_SIZE = 2 << 20; // max block size for a single thread
-public static final int MAX_THREAD_RETRY = 5; // max retry count for a single thread
-public static final int MAX_THREAD_CNT = 3; // max thread count for a single downloading
-public static final int MAX_DOWNLOADS = 2; // max number of downloading working together
-
-```
+There are several settings you could change in Config.java including timeouts and threads controls.
 
 ### Usage
 
@@ -49,7 +45,7 @@ mStack.setDownloadListener(null);
 </service>
 ```
 
-2.
+2. Use it in your activity
 ```java
 private IDownloader mDownloader;
 private ServiceConnection mConnection = new ServiceConnection() {
